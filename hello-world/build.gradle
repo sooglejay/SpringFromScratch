@@ -1,0 +1,24 @@
+description = 'The learning project'
+
+group 'com.learn.gradle'
+version '1.0-SNAPSHOT'
+apply plugin: 'application'
+apply plugin: 'groovy'
+apply plugin: 'java'
+mainClassName = 'hello.HelloWorld'
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    description 'jiangwei ss'
+    compile "joda-time:joda-time:2.2"
+    compile 'org.codehaus.groovy:groovy-all:2.3.11'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
+jar {
+    baseName = 'gs-gradle-jiangwei'
+    version = '0.1.0'
+}
