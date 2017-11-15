@@ -1,0 +1,11 @@
+2017-11-14
+1、
+在Eureka 的服务治理设计中，所有节点既是服务提供方，也是服务消费方，服务注册中心也不例外
+所以，在Eureka的配置文件中，会有eureka.client.register-with-eureka=false
+表示，Eureka不向它自己注册
+
+2、
+先运行Eureka 这个服务注册中心，然后在运行client 服务器
+访问/home,client服务器控制终端会输出jiangwei visits /hello,host:121.49.103.246, service_id:hello-jiangwei-service
+
+
